@@ -1,0 +1,310 @@
+.mgmt h1,
+.mgmt h2,
+.mgmt h3,
+.mgmt h4 {
+  color: black;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeFromLeft {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromLeft {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lineWidth {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes lineWidth {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.mgmt .card a:not(.btn),
+.mgmt p a,
+.mgmt ul a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.mgmt .card a:not(.btn):hover,
+.mgmt p a:hover,
+.mgmt ul a:hover {
+  text-decoration: none;
+}
+
+.mgmt .card a:not(.btn):before,
+.mgmt p a:before,
+.mgmt ul a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #007bff;
+  background: #007bff;
+  visibility: invisible;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-align: center;
+}
+
+.mgmt .card a:not(.btn):hover:before,
+.mgmt p a:hover:before,
+.mgmt ul a:hover:before {
+  background-color: #0056b3;
+  background: #0056b3;
+  visibility: visible;
+  width: 100%;
+}
+
+.mgmt .hero {
+  background-color: #001a34;
+}
+
+.mgmt .hero .mission-box {
+  background-color: #f5f0e1;
+  padding: 2em 4em;
+}
+
+.mgmt .hero .title {
+  padding: 2em 2em 2em 4em;
+  -webkit-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
+}
+
+.mgmt .hero .title h1 {
+  text-align: left;
+}
+
+.mgmt .hero h1 {
+  font-size: 4em;
+  color: #fff;
+  text-align: left;
+}
+
+.mgmt .hero p {
+  font-size: 1.4em;
+}
+
+.mgmt .hero .title span {
+  display: inline-block;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.mgmt .hero .title span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0px;
+  left: 0;
+  background-color: #f5f0e1;
+  background: #f5f0e1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-align: center;
+  -webkit-animation: lineWidth 0.4s both 0.4s;
+  animation: lineWidth 0.4s both 0.4s;
+}
+
+.mgmt .mission-box {
+  -webkit-animation: fadeFromLeft 0.8s both 0.7s;
+  animation: fadeFromLeft 0.8s both 0.7s;
+}
+
+.mgmt section {
+  -webkit-animation: fadeUp 0.4s both;
+  animation: fadeUp 0.4s both;
+}
+
+.mgmt section:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.mgmt section:nth-child(2) {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.mgmt section:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.mgmt .quicklinks {
+  background-color: #3a6a9a;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.mgmt .quicklinks a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffff;
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  background: #0000000e;
+  border: 3px solid #ffff;
+  border-radius: 16px;
+  margin: 0.4em;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mgmt .quicklinks a:hover {
+  background: #002850;
+  -webkit-box-shadow: 2px 2px 100px #4e4e4e48, -2px -2px 10px #6161614d;
+  box-shadow: 2px 2px 100px #4e4e4e48, -2px -2px 10px #6161614d;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.mgmt .card {
+  background-color: #e8e3db75;
+  border-radius: 0;
+  border: none;
+  border-left: 4px solid transparent;
+  height: 100%;
+  margin: 1em 0;
+  padding: 1em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.mgmt .card:hover {
+  -webkit-box-shadow: 2px 2px 100px #4e4e4e31, -2px 2px 10px #61616136;
+  box-shadow: 2px 2px 100px #4e4e4e31, -2px 2px 10px #61616136;
+  -webkit-transform: scale(1.005);
+  transform: scale(1.005);
+  -webkit-filter: brightness(1.05);
+  filter: brightness(1.05);
+  border-left: 4px solid #1e3d59;
+}
+
+.mgmt .card ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.mgmt .card p {
+  font-size: 1.1em;
+}
+
+.mgmt .card a {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.mgmt .divisions {
+  background-color: #3a6a9a10;
+  padding: 1em;
+}
+
+.mgmt .divisions .col-md-6 {
+  padding-bottom: 2em;
+}
+/*# sourceMappingURL=styles.css.map */
