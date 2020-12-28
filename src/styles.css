@@ -1,8 +1,14 @@
+.mgmt {
+  margin: -2rem -1rem;
+}
+
 .mgmt h1,
 .mgmt h2,
 .mgmt h3,
 .mgmt h4 {
   color: black;
+  font-weight: bold !important;
+  text-transform: none !important;
 }
 
 @-webkit-keyframes fadeIn {
@@ -146,6 +152,7 @@
 
 .mgmt .hero .mission-box {
   background-color: #f5f0e1;
+  height: 100%;
   padding: 2em 4em;
 }
 
@@ -268,7 +275,6 @@
   border-radius: 0;
   border: none;
   border-left: 4px solid transparent;
-  height: 100%;
   margin: 1em 0;
   padding: 1em;
   -webkit-transition: all 0.2s;
@@ -301,10 +307,35 @@
 
 .mgmt .divisions {
   background-color: #3a6a9a10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 1em;
 }
 
-.mgmt .divisions .col-md-6 {
-  padding-bottom: 2em;
+.mgmt .divisions .title-box {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  width: 100%;
+  display: block;
+}
+
+.mgmt .divisions .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 400px;
+  flex: 1 0 400px;
+  /*  Stretching: */
+  max-width: 50%;
+  margin: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
